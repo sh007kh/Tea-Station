@@ -24,7 +24,8 @@ Variables
   --spacing: 0.25rem;
   --radius: 0.5rem;
 }
-* {
+*,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -290,5 +291,51 @@ skills
   .skills-center {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+  }
+}
+/* 
+========
+about
+========
+ */
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+.about-img {
+  text-align: center;
+}
+.about-img-container {
+  border-radius: var(--radius);
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--clr-primary);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 0.5rem solid var(--clr-primary);
+}
+.about-photo {
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.about-img-container:hover .about-photo {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+.about-info p {
+  max-width: 25rem;
+}
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .about-img,
+  .about-info {
+    width: calc(50% - 2rem);
+    margin-right: 2rem;
   }
 }
