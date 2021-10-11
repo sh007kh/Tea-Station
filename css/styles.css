@@ -72,6 +72,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -219,7 +220,7 @@ hero
   text-transform: uppercase;
 }
 .nav-btn {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   left: 2rem;
   font-size: 2rem;
@@ -243,4 +244,49 @@ hero
     rgb(253, 249, 25),
     rgb(120, 228, 93)
   );
+}
+/* 
+========
+skills
+========
+ */
+.skills {
+  background: var(--clr-grey-10);
+}
+.skill {
+  text-align: center;
+  padding: 2.5rem 0;
+  transition: var(--transition);
+}
+.skill-icon {
+  font-size: 2.5rem;
+  transition: var(--transition);
+  color: var(--clr-primary);
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+.skill p {
+  max-width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill:hover {
+  background: var(--clr-white);
+  box-shadow: 0 2px var(--clr-primary);
+}
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
+@media screen and (min-width: 576px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .skills-center {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
