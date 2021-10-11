@@ -117,7 +117,7 @@ p {
   color: var(--clr-primary);
   background: var(--clr-primary-light);
 }
-.section-title h2 {
+.section-title h3 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
 }
@@ -214,6 +214,8 @@ hero
 }
 .hero-title h2 {
   margin-bottom: 1.25rem;
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
 }
 .hero-title h1 {
   color: var(--clr-white);
