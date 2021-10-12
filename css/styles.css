@@ -405,6 +405,10 @@ products
 services
 ========
  */
+.services .section-title {
+  text-align: center;
+  margin-top: 4rem;
+}
 .service {
   background: var(--clr-grey-10);
   margin-bottom: 2rem;
@@ -418,6 +422,7 @@ services
   box-shadow: var(--dark-shadow);
   transform: scale(1.02);
 }
+
 .service-img {
   height: 15rem;
   object-fit: cover;
@@ -473,7 +478,7 @@ services
 }
 /* 
 ========
-services
+contacts`
 ========
  */
 .contact {
