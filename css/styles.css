@@ -234,6 +234,8 @@ hero
   color: var(--clr-primary);
   cursor: pointer;
   transition: var(--transition);
+  animation: bounce 2s infinite ease-in-out;
+  z-index: 2;
 }
 .hero-btn {
   outline: 0.125rem solid var(--clr-primary);
@@ -249,6 +251,22 @@ hero
     rgb(253, 249, 25),
     rgb(120, 228, 93)
   );
+}
+/* 
+======
+animations
+======
+ */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /* 
 ========
